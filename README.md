@@ -1,5 +1,4 @@
-# invictus-server
- Simple crud app
+# Simple crud app
 
  ```diff
 -Git clone
