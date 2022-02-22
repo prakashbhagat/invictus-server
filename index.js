@@ -6,7 +6,7 @@ const db = require("./src/models");
 const path = require('path');
 
 var corsOptions = {
-  origin: "https://prakashbhagat.herokuapp.com"
+  origin: "http://localhost"
 };
 app.use(cors(corsOptions));
 // parse requests of content-type - application/json
@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 require("./src/routes/student.routes")(app);
 
 // set port, listen for requests
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
