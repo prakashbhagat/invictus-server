@@ -6,7 +6,7 @@ const db = require("./src/models");
 const path = require('path');
 
 var corsOptions = {
-  origin: "http://localhost:4200"
+  origin: "https://prakashbhagat.herokuapp.com"
 };
 app.use(cors(corsOptions));
 // parse requests of content-type - application/json
